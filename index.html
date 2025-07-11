@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="shortcut icon" href="imgs/logo.svg" type="image/x-icon" />
+        <title>Cuidados Pets</title>
+    </head>
+
+    <body>
+        <!-- Seção de boas-vindas -->
+        <header class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#racas">Raças</a></li>
+                    <li><a href="#dicas">Dicas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#video">Vídeo</a></li>
+                </ul>
+            </nav>
+            <img
+                src="/imgs/pets.png"
+                alt="Cachorro feliz"
+                style="width: 400px; height: 400px"
+            />
+        </header>
+
+        <div class="welcome-text">
+            <h1 style="text-align: center; color: blue">Cuidados Pets</h1>
+            <p>
+                Bem-vindo ao nosso site sobre cuidados com pets! Aqui você
+                encontrará informações valiosas e dicas úteis para cuidar do seu
+                melhor amigo de quatro patas.
+            </p>
+        </div>
+
+        <!-- Seção de cuidados básicos -->
+
+        <div class="section">
+            <div class="image_esquerda">
+                <img src="./imgs/pets1.png" alt="Cachorros" />
+            </div>
+            <div class="content_direita">
+                <h2>Cuidados básicos com o seu cachorro</h2>
+                <ul>
+                    <li>Alimentação</li>
+                    <li>Higiene</li>
+                    <li>Vacinas e vermifugação</li>
+                    <li>Passeios e exercícios</li>
+                    <li>Consultas ao veterinário</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Seção sobre raças de cachorro -->
+        <h2 style="text-align: center; color: blue">Raças de Cachorro</h2>
+
+        <br />
+        <p>
+            Existe uma grande diversidade de raças de cachorro, cada uma com
+            suas características e personalidades únicas. Conheça algumas delas:
+        </p>
+
+        <table
+            summary="Lista de Clientes"
+            border="2"
+            cellspacing="3px"
+            cellpadding="5px"
+        >
+            <thead>
+                <tr bgcolor="lightblue">
+                    <th>Raça</th>
+                    <th>Características</th>
+                </tr>
+            </thead>
+            <tbody style="background-color: rgb(235, 198, 198)">
+                <tr>
+                    <td>Labrador Retriever</td>
+                    <td>
+                        Uma das raças mais populares do mundo, o labrador é
+                        conhecido por ser amigável, leal e inteligente.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Golden Retriever</td>
+                    <td>
+                        Outro favorito popular, o golden retriever é um cachorro
+                        amigável e afetuoso que adora brincar.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Poodle</td>
+                    <td>
+                        Uma raça inteligente e brincalhona, o poodle vem em três
+                        tamanhos diferentes e é uma ótima opção para pessoas com
+                        alergias.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bulldog Inglês</td>
+                    <td>
+                        Um cachorro amigável e leal, o bulldog inglês é uma raça
+                        tranquila e de baixa energia.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pastor Alemão</td>
+                    <td>
+                        Uma raça inteligente e corajosa, o pastor alemão é
+                        frequentemente usado como cão policial ou de guarda.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Beagle</td>
+                    <td>
+                        Conhecido por seu olfato aguçado, o beagle é um cachorro
+                        curioso e amigável que adora explorar.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Seção de dicas para treinamento -->
+        <h2 id="dicas" style="text-align: center; color: rgb(172, 97, 6)" ;>
+            Dicas para Treinamento de Cachorro
+        </h2>
+        <br />
+        <ol>
+            <li>Use reforço positivo</li>
+            <li>Seja consistente</li>
+            <li>Não desista</li>
+            <li>Envolva toda a família</li>
+            <li>Considere a ajuda de um profissional</li>
+        </ol>
+        <br />
+
+        <!-- Formulário de contato -->
+        <h2 id="contato" style="text-align: center; color: rgb(108, 6, 172)">
+            Formulário de Contato
+        </h2>
+        <form action="processar.php" method="post">
+            <label for="nome">Nome:</label><br />
+            <input type="text" id="nome" name="nome" required /><br /><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="mensagem">Mensagem:</label><br />
+            <textarea
+                id="mensagem"
+                name="mensagem"
+                cols="30"
+                rows="5"
+                required
+            ></textarea
+            ><br /><br />
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Vídeo do YouTube (exemplo) -->
+        <h2 style="text-align: center; color: blue" id="video">
+            Vídeo sobre Cuidados com Pets
+        </h2>
+        <iframe
+            width="541"
+            height="306"
+            src="https://www.youtube.com/embed/FjJba7UCtoA"
+            title="DE QUEM ???  ⭐Cachorros Engraçados ⭐#Shorts"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe>
+
+        <!-- Rodapé -->
+        <footer style="text-align: center; color: rgb(0, 0, 0)">
+            <p>
+                &copy; 2025 - Pedro Zeferino da Silva - Todos os direitos
+                reservados 🚀
+            </p>
+        </footer>
+    </body>
+</html>
